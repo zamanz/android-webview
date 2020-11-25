@@ -22,6 +22,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    private String SITE_URL = "https://sepl.exchangeon.xyz/";
     private LinearLayout progressBarLayout;
     private ProgressBar progressBar;
     private WebView webView;
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             });
             webView.getSettings().setJavaScriptEnabled(true);
             //set url
-            webView.loadUrl("http://192.168.0.120/sepl-cms");
+            webView.loadUrl(SITE_URL);
             swipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                 @Override
                 public void onRefresh() {
