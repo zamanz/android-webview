@@ -22,7 +22,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private String SITE_URL = "https://sepl.exchangeon.xyz/";
+    private String SITE_URL = "https://kzaman.me/";
     private LinearLayout progressBarLayout;
     private ProgressBar progressBar;
     private WebView webView;
